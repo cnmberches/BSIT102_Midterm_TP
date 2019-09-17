@@ -10,8 +10,7 @@ public class Fout
     {
     	sc = new Scanner(System.in);
     	System.out.print("File Name: ");
-    	File f = new File(sc.next()+ ".cnmb");
-    	in  = new Scanner(f);
+    	in  = new Scanner(new File(sc.next() + ".cnmb"));
     	System.out.print(in.next());  
     }
  
